@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Monton&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing : border-box;
+    text-align:center;
+    text-decoration: none;
+}
+html{
+    width: 100vw;
+    border: 10px solid transparent;
+    border-image: url(images/image10.jpg) 30 round;
+    /* border-image-width: 100%; */
+    min-height: 100%;
+ 
+}
+body    {
+    margin:0 auto;
+    /* border: 3px solid violet; */
+    background-color: orangered;
+    padding-bottom:10px;
+
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+    color: pink;
+    font-size: 3em;
+}
+h2{font-family: 'Abril Fatface', cursive;
+    color:pink;
+    font-size:2em;
+   
+}
+div {
+    height:auto;
+    width: 100%;
+}
+div a{
+    font-family:'Monoton', cursive;;
+    color:transparent;
+    font-size: 5.5em;
+    background-image: url(images/image10.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 4vw;
+    text-align:center;
+}
+
+/* @media screen and (max-width : 1200px)
+{
+  div a
+  {
+    font-size:8em;
+  }
+}
+@media screen and (max-width : 320px)
+{
+  div a
+  {
+    font-size:4em;
+  }
+} */
