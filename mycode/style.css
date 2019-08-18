@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Monton&display=swap');
 
-
+:root{
+  /* font-size: calc(1vw + 1vh + 1.5vmin); */
+}
 * {
-    margin:0;
-    padding:0;
-    box-sizing : border-box;
-    text-align:center;
-    text-decoration: none;
+  margin:0;
+  padding:0;
+  box-sizing : border-box;
+  text-align:center;
+  text-decoration: none;
 }
 html{
     width: 100vw;
@@ -14,52 +16,69 @@ html{
     border-image: url(images/image10.jpg) 30 round;
     /* border-image-width: 100%; */
     min-height: 100%;
- 
-}
-body    {
+    
+  }
+  body    {
     margin:0 auto;
-    /* border: 3px solid violet; */
+    /* border: 3px double violet; */
     background-color: orangered;
     padding-bottom:10px;
-
-}
-h1{
+  }
+  h1, h2, .popup, button{
     font-family: 'Abril Fatface', cursive;
+    text-shadow:2px 2px 2px red;
     color: pink;
-    font-size: 3em;
-}
-h2{font-family: 'Abril Fatface', cursive;
-    color:pink;
-    font-size:2em;
-   
+  }
+h1 {
+  font-size: 3.2em;
+  }
+h2 {
+  font-size:2em;
 }
 div {
-    height:auto;
-    width: 100%;
-}
-div a{
-    font-family:'Monoton', cursive;;
-    color:transparent;
-    font-size: 5.5em;
-    background-image: url(images/image10.jpg);
-    background-size: contain;
-    -webkit-background-clip: text;
-    background-clip: text;
-    margin: 4vw;
-    text-align:center;
-}
-
-/* @media screen and (max-width : 1200px)
-{
-  div a
-  {
-    font-size:8em;
+  height:auto;
+  padding: 5% 0;
   }
+  div a{
+  font-family:'Monoton', cursive;
+  font-weight: bold;
+  color:transparent;
+  font-size: 15vh;
+  background-image: url(images/image10.jpg);
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 4vw;
+  text-align:center;
 }
-@media screen and (max-width : 320px)
-{
-  div a
-  {
-    font-size:4em;
+.popup{
+  display:none;
+  font-size:2em;
+  position: absolute;
+  z-index: 2;
+  top: 30% ;
+  left: 0; /*left and right is necessary for centering with margin 0 auto*/
+  right: 0;
+  margin: 0 auto;
+  background-color: orangered;
+  width: 90vw;
+  height: auto;
+  border:1px solid transparent;
+  box-shadow: 2px 2px 2px 2px violet;
   }
-} */
+  button:hover {
+  color: gold;
+  }
+button{
+  font-size: 1em;
+  background-color: orangered;
+  border:1px solid transparent;
+  padding: 5%;
+  color: pink;
+  transition-duration: 0.4s;
+}
+/* 
+h1,h2,a{
+    text-shadow: 0 0 45px yellow; 
+    /* color: deeppink; */
+ }  */
