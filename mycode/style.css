@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Monoton&display=swap");
-:root {
-  /* font-size: calc(1vw + 1vh + 1.5vmin); */
-}
+/* :root {
+  font-size: calc(1vw + 1vh + 1.5vmin);
+} */
+
 * {
   margin: 0;
   padding: 0;

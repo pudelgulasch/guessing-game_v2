@@ -1,15 +1,12 @@
-let numbers = document.querySelectorAll("div a");
-let h2 = document.querySelector("h2");
-let guessesleft = document.querySelector("#guesses-left");
-let popup = document.querySelector(".popup");
-let clicks = 0;
-let random = Math.floor(Math.random() * 10 + 1);
+import { numbers, h2, guessesleft, popup, random } from "./globals.js";
 
 window.onload;
 
 for (let i = 0; i < numbers.length; i++) {
   numbers[i].addEventListener("click", numberEqual);
 }
+
+let clicks = 0; // count can not be imported, nicht im Gültigkeitsbereich
 
 function numberEqual(e) {
   if (clicks < 2 && random != e.target.innerText) {
