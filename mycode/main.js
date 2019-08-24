@@ -1,4 +1,3 @@
-
 import { numbers, h2, guessesleft, popup, random } from "./globals.js";
 
 window.onload;

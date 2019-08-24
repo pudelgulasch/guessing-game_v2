@@ -1,78 +1,80 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Monton&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Monoton&display=swap");
+/* :root {
+  font-size: calc(1vw + 1vh + 1.5vmin);
+} */
 
-:root{
-  /* font-size: calc(1vw + 1vh + 1.5vmin); */
-}
 * {
-  margin:0;
-  padding:0;
-  box-sizing : border-box;
-  text-align:center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
   text-decoration: none;
 }
-html{
-    width: 100vw;
-    border: 10px solid transparent;
-    border-image: url(images/image10.jpg) 30 round;
-    /* border-image-width: 100%; */
-    min-height: 100%;
-    
-  }
-  body    {
-    margin:0 auto;
-    /* border: 3px double violet; */
-    background-color: orangered;
-    padding-bottom:10px;
-  }
-  h1, h2, .popup, button{
-    font-family: 'Abril Fatface', cursive;
-    text-shadow:2px 2px 2px red;
-    color: pink;
-  }
+html {
+  width: 100vw;
+  border: 10px solid transparent;
+  border-image: url(images/image10.jpg) 30 round;
+  /* border-image-width: 100%; */
+  min-height: 100%;
+}
+body {
+  margin: 0 auto;
+  /* border: 3px double violet; */
+  background-color: orangered;
+  padding-bottom: 10px;
+}
+h1,
+h2,
+.popup,
+button {
+  font-family: "Abril Fatface", cursive;
+  text-shadow: 2px 2px 2px red;
+  color: pink;
+}
 h1 {
   font-size: 3.2em;
-  }
+}
 h2 {
-  font-size:2em;
+  font-size: 2em;
 }
 div {
-  height:auto;
+  height: auto;
   padding: 5% 0;
-  }
-  div a{
-  font-family:'Monoton', cursive;
-  font-weight: bold;
-  color:transparent;
+}
+div a {
+  font-family: "Monoton", cursive;
+  /* font-weight: bold; */
+  color: transparent;
   font-size: 15vh;
   background-image: url(images/image10.jpg);
   background-size: contain;
   -webkit-background-clip: text;
   background-clip: text;
-  margin: 4vw;
-  text-align:center;
+  /* margin: 4vw; */
+  padding: 4vw;
 }
-.popup{
-  display:none;
-  font-size:2em;
+.popup {
+  display: none;
+  font-size: 2em;
   position: absolute;
   z-index: 2;
-  top: 30% ;
+  top: 40%;
   left: 0; /*left and right is necessary for centering with margin 0 auto*/
   right: 0;
   margin: 0 auto;
   background-color: orangered;
   width: 90vw;
   height: auto;
-  border:1px solid transparent;
+  border: 1px solid violet;
   box-shadow: 2px 2px 2px 2px violet;
-  }
-  button:hover {
+}
+button:hover {
   color: gold;
-  }
-button{
+}
+button {
   font-size: 1em;
   background-color: orangered;
-  border:1px solid transparent;
+  border: 1px solid transparent;
   padding: 5%;
   color: pink;
   transition-duration: 0.4s;
